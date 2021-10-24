@@ -1,5 +1,5 @@
 
-# cloud-bootcamp
+# Open Up The Cloud - Cloud Bootcamp
 
 A repository of exercises for learning about the cloud, using [Gitpod.io](https://gitpod.io/).
 
