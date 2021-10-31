@@ -7,4 +7,4 @@ tasks:
       export AWS_DEFAULT_REGION=us-east-1 &&
       gp env AWS_VAULT_FILE_PASSPHRASE=password &&
       aws-vault add default --backend=file --env
-    command: echo "Your cloud commands go here👇 🚀"
+    command: ./setup.sh

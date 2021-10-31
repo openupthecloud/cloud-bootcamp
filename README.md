@@ -18,12 +18,9 @@ Just click below 👇
 
 ### 2. Add your access key & secret
 
-To [your environment variables](https://www.gitpod.io/docs/environment-variables)
+When the workspace opens, you'll be prompted for your `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`
 
-Within Gitpod workspace, execute: 
-
-* `gp env AWS_ACCESS_KEY_ID=your-access-key`
-* `gp env AWS_SECRET_ACCESS_KEY=your-secret-key`
+Which will be added to [your Gitpod environment variables](https://www.gitpod.io/docs/environment-variables)
 
 **Note:** Remember to replace the access key and secret with your actual ones. 
 
