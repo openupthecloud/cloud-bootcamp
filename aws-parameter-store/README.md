@@ -1,4 +1,6 @@
-## With SSM Parameter store
+## SSM Parameter store
+
+This is a basic exercise to showcase AWS parameter store, and how to store and retrieve a key.
 
 ### Exercise 1: Create a new parameter in parameter store
 
