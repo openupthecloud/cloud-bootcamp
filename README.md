@@ -9,7 +9,7 @@ A repository of exercises for learning about the cloud, using [Gitpod.io](https:
 
 <a href="https://gitpod.io/#https://github.com/openupthecloud/cloud-bootcamp"><img src="https://gitpod.io/button/open-in-gitpod.svg"/></a>
 
-### 2. Add Access Key & Secret Key
+### 2. Add your access key & secret
 
 To [your environment variables](https://www.gitpod.io/docs/environment-variables)
 
