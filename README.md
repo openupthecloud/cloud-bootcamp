@@ -1,13 +1,19 @@
 
 # Open Up The Cloud - Cloud Bootcamp
 
-A repository of exercises for learning about the cloud, using [Gitpod.io](https://gitpod.io/).
+A repository of exercises for learning about the cloud (uses [Gitpod.io](https://gitpod.io/))
 
-## Setup 
+## Getting Started
 
 ### 1. Open in Gitpod
 
+It's [free up to 50 hours a month](https://www.gitpod.io/pricing), which should be enough to get you started.
+
+Just click below 👇 
+
 <a href="https://gitpod.io/#https://github.com/openupthecloud/cloud-bootcamp"><img src="https://gitpod.io/button/open-in-gitpod.svg"/></a>
+
+**Note:** You don't _have_ to do this step, you can also configure your local environment according to the [Dockerfile](./.gitpod.Dockerfile) and [Gitpod YAML](./.gitpod.yml). Using Gitpod avoids understanding all of that as a beginner, though. Also, consider installing [the Gitpod browser extension](https://www.gitpod.io/docs/browser-extension/).
 
 ### 2. Add your access key & secret
 
@@ -27,32 +33,29 @@ What is [aws-vault](https://github.com/99designs/aws-vault)?
 * Set a passphrase `gp env AWS_VAULT_FILE_PASSPHRASE=password`
 * Setup `aws-vault add default --backend=file --env`
 
-Login to your AWS account: `aws-vault login default --backend=file`
+### 4. You're All Set ! 🚀
 
-### 4. Double check you have the right AWS account configured
+* Login to your AWS account (if you setup aws-vault): `aws-vault login default --backend=file`
+* Check you have the right AWS credentials configured: `aws sts get-caller-identity --query Account --output text` will show your AWS account ID.
+* Check your current environment variables with: `env | grep AWS`
+* Try the following command to make an S3 bucket (note: each call makes a new bucket) `BUCKET=s3://open-up-the-cloud-test-bucket"$(date +%s)" && aws s3 mb "$BUCKET" && aws s3 ls` 
 
-To check you have the right credentials configured, run: `aws sts get-caller-identity --query Account --output text`
-
-You can also check your current environment variables with: `env | grep AWS`
-
-Try the following command to make an S3 bucket (note: each call makes a new bucket) `BUCKET=s3://open-up-the-cloud-test-bucket"$(date +%s)" && aws s3 mb "$BUCKET" && aws s3 ls` 
-
-## Cloud Access
+## What if I don't have an AWS account?
 
 For cloud access, I highly recommend using the [A Cloud Guru playgrounds](https://acloudguru.com/platform/cloud-sandbox-playgrounds) so that: 
 
 1. You don't have to deal with deleting resources
 2. Never get landed with an outsized bill
 
-## Disclaimer
+If you choose to create your own AWS account, be sure to follow best-practices such as: setting up a billing alarm, etc. Using A Cloud Guru gets around this complexity, but it's your choice. 
 
-Please execute any of the scripts found in this application with caution, be sure to delete any unnecessary resources after creation. 
+### Backlog / Todo
 
-## Backlog / Todo
+List of outstanding things to do to improve this project:
 
 - [ ] JQ exercises
 - [ ] Turn setup instructions into a bash prompt script
 
 ## DISCLAIMER
 
-Any commands ran in this repository are done at your own risk. Proceed with caution. 
+Please execute any of the scripts found in this application with caution, be sure to delete any unnecessary resources after creation. 
