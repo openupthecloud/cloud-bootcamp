@@ -5,27 +5,31 @@ A repository of exercises for learning about the cloud, using [Gitpod.io](https:
 
 ## Setup 
 
-1. Open in Gitpod
+### 1. Open in Gitpod
 
 <a href="https://gitpod.io/#https://github.com/openupthecloud/cloud-bootcamp"><img src="https://gitpod.io/button/open-in-gitpod.svg"/></a>
 
-2. Add `AWS_ACCESS_KEY_ID` to [your environment variables](https://www.gitpod.io/docs/environment-variables)
+### 2. Add Access Key & Secret Key
 
-Within Gitpod workspace, execute: `gp env AWS_ACCESS_KEY_ID=your-access-key`
+To [your environment variables](https://www.gitpod.io/docs/environment-variables)
 
-3. Add `AWS_SECRET_ACCESS_KEY` to [your environment variables](https://www.gitpod.io/docs/environment-variables)
+Within Gitpod workspace, execute: 
 
-Within Gitpod workspace, execute: `gp env AWS_SECRET_ACCESS_KEY=your-secret-key`
+* `gp env AWS_ACCESS_KEY_ID=your-access-key`
+* `gp env AWS_SECRET_ACCESS_KEY=your-secret-key`
 
-4. Setup [aws-vault](https://github.com/99designs/aws-vault) (optional)
+**Note:** Remember to replace the access key and secret with your actual ones. 
 
-Set a passphrase `gp env AWS_VAULT_FILE_PASSPHRASE=password`
+### 3. Setup aws-vault (optional)
 
-Setup `aws-vault add default --backend=file --env`
+What is [aws-vault](https://github.com/99designs/aws-vault)? 
+
+* Set a passphrase `gp env AWS_VAULT_FILE_PASSPHRASE=password`
+* Setup `aws-vault add default --backend=file --env`
 
 Login to your AWS account: `aws-vault login default --backend=file`
 
-5. Double check you have the right AWS account configured
+### 4. Double check you have the right AWS account configured
 
 To check you have the right credentials configured, run: `aws sts get-caller-identity --query Account --output text`
 
