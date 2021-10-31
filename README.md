@@ -7,9 +7,17 @@ A repository of exercises for learning about the cloud, using [Gitpod.io](https:
 
 ## Setup 
 
-1. Add `AWS_ACCESS_KEY_ID` to [your environment variables](https://www.gitpod.io/docs/environment-variables)
-2. Add `AWS_SECRET_ACCESS_KEY` to [your environment variables](https://www.gitpod.io/docs/environment-variables)
-2. Open in Gitpod
+1. Open in Gitpod
+
+<a href="https://gitpod.io/#https://github.com/openupthecloud/cloud-bootcamp"><img src="https://gitpod.io/button/open-in-gitpod.svg"/></a>
+
+2. Add `AWS_ACCESS_KEY_ID` to [your environment variables](https://www.gitpod.io/docs/environment-variables)
+
+Within Gitpod workspace, you can simply execute: `gp env AWS_ACCESS_KEY_ID=your-access-key`
+
+3. Add `AWS_SECRET_ACCESS_KEY` to [your environment variables](https://www.gitpod.io/docs/environment-variables)
+
+Within Gitpod workspace, you can simply execute: `gp env AWS_SECRET_ACCESS_KEY=your-secret-key`
 
 ## Cloud Access
 
