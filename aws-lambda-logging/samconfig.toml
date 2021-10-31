@@ -7,4 +7,5 @@ s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1u0v0fd08kryb"
 s3_prefix = "sam-app"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
+disable_rollback = true
 image_repositories = []
