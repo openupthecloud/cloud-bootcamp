@@ -13,11 +13,27 @@ A repository of exercises for learning about the cloud, using [Gitpod.io](https:
 
 2. Add `AWS_ACCESS_KEY_ID` to [your environment variables](https://www.gitpod.io/docs/environment-variables)
 
-Within Gitpod workspace, you can simply execute: `gp env AWS_ACCESS_KEY_ID=your-access-key`
+Within Gitpod workspace, execute: `gp env AWS_ACCESS_KEY_ID=your-access-key`
 
 3. Add `AWS_SECRET_ACCESS_KEY` to [your environment variables](https://www.gitpod.io/docs/environment-variables)
 
-Within Gitpod workspace, you can simply execute: `gp env AWS_SECRET_ACCESS_KEY=your-secret-key`
+Within Gitpod workspace, execute: `gp env AWS_SECRET_ACCESS_KEY=your-secret-key`
+
+4. Setup [aws-vault](https://github.com/99designs/aws-vault) (optional)
+
+Set a passphrase `gp env AWS_VAULT_FILE_PASSPHRASE=password`
+
+Setup `aws-vault add default --backend=file --env`
+
+Login to your AWS account: `aws-vault login default --backend=file`
+
+5. Double check you have the right AWS account configured
+
+To check you have the right credentials configured, run: `aws sts get-caller-identity --query Account --output text`
+
+You can also check your current environment variables with: `env | grep AWS`
+
+Try the following command to make an S3 bucket (note: each call makes a new bucket) `BUCKET=s3://open-up-the-cloud-test-bucket"$(date +%s)" && aws s3 mb "$BUCKET" && aws s3 ls` 
 
 ## Cloud Access
 
@@ -33,3 +49,8 @@ Please execute any of the scripts found in this application with caution, be sur
 ## Backlog / Todo
 
 - [ ] JQ exercises
+- [ ] Turn setup instructions into a bash prompt script
+
+## DISCLAIMER
+
+Any commands ran in this repository are done at your own risk. Proceed with caution. 

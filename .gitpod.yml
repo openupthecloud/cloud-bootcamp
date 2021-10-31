@@ -3,6 +3,5 @@ image:
 
 tasks:
   - name: Your Command Line!
-    init: |
-      export AWS_DEFAULT_REGION="us-east-1"
+    init: export AWS_DEFAULT_REGION=us-east-1
     command: echo "Your cloud commands go here👇 🚀"
