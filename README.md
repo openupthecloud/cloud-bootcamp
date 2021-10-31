@@ -27,14 +27,7 @@ Within Gitpod workspace, execute:
 
 **Note:** Remember to replace the access key and secret with your actual ones. 
 
-### 3. Setup aws-vault (optional)
-
-What is [aws-vault](https://github.com/99designs/aws-vault)? 
-
-* Set a passphrase `gp env AWS_VAULT_FILE_PASSPHRASE=password`
-* Setup `aws-vault add default --backend=file --env`
-
-### 4. You're All Set ! 🚀
+### 3. You're All Set ! 🚀
 
 * Login to your AWS account (if you setup aws-vault): `aws-vault login default --backend=file`
 * Check you have the right AWS credentials configured: `aws sts get-caller-identity --query Account --output text` will show your AWS account ID.
