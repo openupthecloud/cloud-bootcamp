@@ -1,3 +1,4 @@
+**Note:** This repository gets updated frequently, so the name / contents of an exercise may differ from any that you've seen referenced as part of an article or video, please use either Git History to understand what has changed, to try to find the current equivalent exercise. If anything you find is broken, feel free to open a pull request, thanks! 
 
 # Open Up The Cloud - Cloud Bootcamp
 
@@ -48,6 +49,10 @@ For cloud access, I highly recommend using the [A Cloud Guru playgrounds](https:
 2. Never get landed with an outsized bill
 
 If you choose to create your own AWS account, be sure to follow best-practices such as: setting up a billing alarm, etc. Using A Cloud Guru gets around this complexity, but it's your choice. 
+
+### Something broken? 
+
+If you find something broken in this repo, if you can fix it, I'd really appreciate if you could raise a PR! 🚀
 
 ### Backlog / Todo
 

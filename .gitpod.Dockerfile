@@ -5,4 +5,5 @@ RUN sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "aws
   && sudo ./aws/install \
   && sudo apt-get update \
   && brew install pandoc \
-  && brew install aws-vault
+  && brew install aws-vault \
+  && pip install aws-sam-cli
